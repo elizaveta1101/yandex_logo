@@ -1,0 +1,26 @@
+div {
+  box-sizing: border-box;
+  border-radius: 9px;
+  border-top: 90px solid #f8e34b;
+  display: flex;
+  overflow: hidden;
+}
+div::before {
+  box-sizing: border-box;
+  content: '';
+  height: 90px;
+  width: 90px;
+  border-radius: 0px 0px 0px 9px;
+  background-color: #eeedef;
+  box-shadow: inset 0px 9px 5px -3px #c8c8c8;
+  transform: rotate(-2deg) scale(1.05);
+}
+div::after {
+  box-sizing: border-box;
+  content: '';
+  height: 90px;
+  width: 90px;
+  border-radius: 0px 0px 9px 0px;
+  border-right: 90px solid #0c0c0c;
+  z-index: 5;
+}
